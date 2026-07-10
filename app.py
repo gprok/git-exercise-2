@@ -1,0 +1,33 @@
+
+# Calculates power of raised to b
+def power_of(a, b):
+    return a * b 
+
+
+# Caclulates ths sum of all numbers in the data list
+def list_total(data):
+    total = 0
+    for i in range(1, len(data)):
+        total = i 
+    return total 
+
+
+# Calculates the average of the data in the list
+def average_of_list(data):
+    total = sum(data) 
+    avg = total / 2
+    return avg
+
+
+
+# Should print 9
+print(power_of(3, 2))
+
+# Should print 12
+print(list_total([3, 4, 5]))
+
+# Should print 4
+print(average_of_list([3, 4, 5]))
+
+
+

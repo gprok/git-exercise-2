@@ -1,21 +1,21 @@
 
 # Calculates power of raised to b
 def power_of(a, b):
-    return a * b 
+    return a ** b #fixed
 
 
 # Caclulates ths sum of all numbers in the data list
 def list_total(data):
     total = 0
-    for i in range(1, len(data)):
-        total = i 
+    for number in data:
+        total += number
     return total 
 
 
 # Calculates the average of the data in the list
 def average_of_list(data):
-    total = sum(data) 
-    avg = total / 2
+    total = list_total(data) 
+    avg = total / len(data)
     return avg
 
 
